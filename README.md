@@ -1,4 +1,4 @@
-### Jenkins and Ansible demo repos
+# Jenkins and Ansible demo repos
 
 ### Objective
 
@@ -6,7 +6,7 @@
 ### Preriquisite
 1. Jenkins host
 
-# Azure hosted Jenkins Master on Ubuntu [![Build Status](http://devops-ci.westcentralus.cloudapp.azure.com/job/qs/job/101-jenkins/badge/icon)](http://devops-ci.westcentralus.cloudapp.azure.com/blue/organizations/jenkins/qs%2F101-jenkins/activity)
+### Azure hosted Jenkins Master on Ubuntu 
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-jenkins%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
@@ -17,9 +17,41 @@
 
 This template allows you to host an instance of Jenkins on a DS1_v2 size Linux Ubuntu 16.04 LTS VM in Azure.
 
-2. Install ansible 
+2. Install ansible on Jenkins host
 ```
 $sudo apt install -y ansible
 ```
 
+3. Prep Inventory
+```
+$vi Jenkins-ansible-demo/Inventory/hosts
+```
 
+```
+[remote]
+192.168.11.11
+192.168.11.12
+xxx.xxx.xxx.xxx
+```
+
+4. Prep Variable file
+```
+$vi Jenkins-ansible-demo/all.yml
+```
+
+```
+---
+
+```
+
+5. Prep playbook
+```
+$vi Jenkins-ansible-demo/
+```
+
+```
+---
+
+```
+
+6. Configuring Jenkins Job
