@@ -63,6 +63,6 @@ $vi Jenkins-ansible-demo/ansible_artifact.yml
 
 6. dry run ansible playbook
 ```
-ansible-playbook -i Inventory ansible_artifact.yml
+ansible-playbook -i Inventory/hosts ansible_artifact.yml --check
 ```
 7. Configuring Jenkins Job
