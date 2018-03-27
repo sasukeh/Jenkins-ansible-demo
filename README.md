@@ -19,7 +19,9 @@ This template allows you to host an instance of Jenkins on a DS1_v2 size Linux U
 
 2. Install ansible on Jenkins host
 ```
-$sudo apt install -y ansible
+$sudo apt install -y libssl-dev python3-dev python3-pip
+$sudo pip3 install ansible
+$sudo pip3 install -U cryptgraphy 
 ```
 
 3. Prep Inventory
@@ -55,5 +57,7 @@ $vi Jenkins-ansible-demo/ansible_artifact.yml
 ```
 
 6. run ansible playbook
-
+```
+git clone git@github.com:sasukeh/Jenkins-ansible-demo.git
+```
 7. Configuring Jenkins Job
