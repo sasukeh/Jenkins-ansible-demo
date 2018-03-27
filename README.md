@@ -17,6 +17,11 @@
 
 This template allows you to host an instance of Jenkins on a DS1_v2 size Linux Ubuntu 16.04 LTS VM in Azure.
 
+2. fetch repos
+```
+git clone https://github.com/sasukeh/Jenkins-ansible-demo.git
+```
+
 2. Install ansible on Jenkins host
 ```
 $sudo apt install -y libssl-dev python3-dev python3-pip
