@@ -36,17 +36,17 @@ xxx.xxx.xxx.xxx
 
 4. Prep Variable file
 ```
-$vi Jenkins-ansible-demo/all.yml
+$vi Jenkins-ansible-demo/remote_vmss_var.yml
 ```
 
-```
+```remote_vmss_var.yml
 ---
 
 ```
 
 5. Prep playbook
 ```
-$vi Jenkins-ansible-demo/
+$vi Jenkins-ansible-demo/ansible_artifact.yml
 ```
 
 ```
@@ -54,4 +54,6 @@ $vi Jenkins-ansible-demo/
 
 ```
 
-6. Configuring Jenkins Job
+6. run ansible playbook
+
+7. Configuring Jenkins Job
