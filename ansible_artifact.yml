@@ -2,4 +2,4 @@
 - hosts: remote_vmss_env
   tasks:
     - name: Install nginx package
-      apt: name={{nginx}} state=present update_cache=yes
+      apt: name=nginx state=present update_cache=yes
