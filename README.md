@@ -61,8 +61,8 @@ $vi Jenkins-ansible-demo/ansible_artifact.yml
 
 ```
 
-6. run ansible playbook
+6. dry run ansible playbook
 ```
-git clone git@github.com:sasukeh/Jenkins-ansible-demo.git
+ansible-playbook -i Inventory ansible_artifact.yml
 ```
 7. Configuring Jenkins Job
